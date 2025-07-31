@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO -->
+    <meta name="description" content="MusicHouse es tu tienda online de instrumentos musicales en Argentina. Encontrá guitarras, bajos, baterías, pianos y mucho más con envíos a todo el país.">
+    <meta name="keywords" content="instrumentos musicales, guitarras eléctricas, bajos profesionales, baterías acústicas, tienda de música online, comprar instrumentos en Argentina">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous"/>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet"/>
+    <!-- TITULO DE LA PAGINA -->
+    <title>MusicHouse | Tienda de Instrumentos Musicales en Argentina</title>
+  </head>
+  <body>
+    <header class="index-header">
+      <div class="index-header-flex">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary w-100 position-fixed top-0">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img src="./img/logo2.png" alt="Logo de MusicHouse - Tienda de Instrumentos Musicales" class="logotipo"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class=" texto-hover nav-link active"  aria-current="page" href="index.html">
+                    Inicio
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="texto-hover nav-link active" aria-current="page" href="./pages/nosotros.html">
+                    Nosotros
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class=" texto-hover nav-link active" aria-current="page" href="./pages/productos.html">
+                    Productos
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class=" texto-hover nav-link active" aria-current="page" href="./pages/sucursales.html" >
+                    Sucursales
+                  </a>
+                <li class="nav-item">
+                  <a class="texto-hover nav-link active" aria-current="page" href="./pages/contacto.html">
+                    Contacto
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <section class="px-3 contenedor-inferior-header h-100 d-flex justify-content-center flex-column mx-3">
+        <h1 class="index-h1">
+           Instrumentos Que Inspiran, Sonidos Que Conectan
+        </h1>
+        <p class="index-parrafo-header">
+          En Music House creemos que cada instrumento es una extensión del alma
+          del músico. Por eso, ofrecemos calidad, diseño y sonido para que tu
+          pasión se escuche como nunca antes.
+        </p>
+        <a href="./pages/productos.html" title="Ver todos nuestros instrumentos"><button class="btn-header">Ver Instrumentos</button></a>
+      </section>
+    </header>
+    <main class="main-index">
+      <h2 class="text-center">¿QUE DICEN NUESTROS CLIENTES?</h2>
+      <section class="card-opinion d-flex ">
+        <div class="div-contenedor">
+          <div class="testimonial-card__icon">
+              <img src="img/iconoOpinion.svg" alt="Icono de comillas" class="icon" />
+          </div>
+          <div class="card-texto">
+            <p>
+              “¡Excelente atención! Me ayudaron en todo momento y el producto llegó incluso antes de lo previsto. Súper recomendado.”
+            </p>
+            <p class="text-end pt-2">
+              — Lucía M. – Buenos Aires
+            </p>
+          </div>
+        </div>
+        <div class="div-contenedor">
+           <div class="testimonial-card__icon">
+              <img src="img/iconoOpinion.svg" alt="Icono de comillas" class="icon" />
+          </div>
+          <div class="card-texto">
+            <p>
+              “Tenía dudas antes de comprar, pero me respondieron rápido y con buena onda. Todo salió perfecto. Volvería a elegirlos sin pensarlo.”
+            </p>
+            <p class="text-end pt-2">
+              — Diego R. – Córdoba
+            </p>
+          </div>
+        </div>
+        <div class="div-contenedor">
+          <div class="testimonial-card__icon">
+              <img src="img/iconoOpinion.svg" alt="Icono de comillas" class="icon" />
+          </div>
+          <div class="card-texto">
+            <p>
+              “La calidad es impecable y se nota el compromiso con los clientes. Me encantó la experiencia de compra, desde la web hasta la entrega.”
+            </p>
+            <p class="text-end pt-2">
+              — Carla F. – Mendoza
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer bg-light text-center py-3">
+      <p class="mb-0">
+        © 2025 | Todos los derechos reservados | Sitio Web Desarrollado por @lucho_cardo
+      </p>
+    </footer>
+    <!-- BOOTSTRAP SCRIPT-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  </body>
+</html>

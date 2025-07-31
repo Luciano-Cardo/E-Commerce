@@ -1,0 +1,222 @@
+/* Estilos Header */
+
+
+
+/*Generales*/
+.index-header-flex, .contacto-header-flex{
+  @extend %flexColumn;
+  justify-content: space-between; /*Da un espacio entre ellos(los links de la navbar)*/
+}
+.navegacion-superior ul li a{
+  color: $colorBlanco;
+  text-decoration: none; /*Le saca el subrayado al a*/
+}
+.index-parrafo-header, .index-h1 , .contacto-parrafo-header, .contacto-h1, .productos-h1, .productos-parrafo-header{
+  color: $colorBlanco;
+}
+.contenedor-inferior-header{
+  gap: $size;
+  max-width: 30rem; /*Limita el width*/
+}
+
+
+
+/*INDEX*/
+.index-header{
+    @extend %paginasHeader;
+} 
+.btn-header{
+    font-weight: 500;
+    max-width: 30rem;
+    color: #4d4d4d;
+    padding: 15px 40px;
+    background-color: $coloGrisClaro;
+    font-family: monospace;
+    border-radius: 50px;
+    border: 2px solid $coloGrisClaro;
+    box-shadow: inset 4px 4px  10px $colorGris, inset -4px -4px 10px $colorBlanco 
+}
+.btn-header:hover{
+    box-shadow: inset 2px 2px 10px $colorGris, inset -2px -2px 10px $colorBlanco, inset 2px 2px 10px $colorGris, inset -2px -2px 10px $colorBlanco; 
+}
+.btn-header a{
+    text-decoration: none;
+    color: $colorNegro;
+}
+
+
+
+/*NOSOTROS*/
+.nosotros-header{
+  background-color: $colorBlanco;
+  height: 100vh;
+}
+.nosotros-header{
+  @extend %configuracionFondo;
+  height: 50vh; 
+}
+.sobre-nosotros {
+  padding: 4rem 2rem;
+}
+.contenedor-nosotros, .contenedor-nosotros2 {
+  @extend %flexWrap;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+.imagen-nosotros img, .imagen-nosotros2 img {
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  height: 30rem;
+  margin-top: 5rem;
+}
+.texto-nosotros, .texto-nosotros2 {
+  max-width: 600px;
+}
+.texto-nosotros h5, .texto-nosotros2 h5 {
+  color: #666;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.texto-nosotros h2, .texto-nosotros2 h2 {
+  font-size: 2rem;
+  color: #0056a6;
+  margin-bottom: $size;
+}
+.texto-nosotros p, .texto-nosotros2 p {
+  font-size: $size;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: $size;
+}
+.linea{
+  margin: auto;
+  width: 60%;
+  margin-top: $size;
+  margin-bottom: $size;
+}
+
+
+
+/*CONTACTO*/
+.contacto-header{
+  @extend %configuracionFondo;
+}
+.contact-wrapper {
+  background-color: rgba(0, 0, 0, 0.089);
+  @extend %flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+.info-tienda{
+  @extend %configuracionContacto;
+}
+.formulario-contacto {
+  background-color: $colorBlanco;
+  @extend %configuracionContacto;
+}
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: $size;
+  margin: 1.5rem 0;
+}
+.info-item i{
+  font-size: 1.5rem;
+  color: $colorBlanco;
+  min-width: 24px;
+}
+.formulario-contacto form {
+  @extend %flex;
+  gap: $size;
+}
+.formulario-contacto input,
+.formulario-contacto select,
+.formulario-contacto textarea {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #aaa;
+}
+.formulario-contacto button {
+  align-self: flex-end;
+  background-color: #14bde0;
+  color: $colorBlanco;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.novedades {
+  background-image: url("../img/fondocontacto1.png");
+  @extend %configuracionFondo;
+  color: $colorNegro;
+  padding: 5rem 2rem 55px 2rem; 
+  text-align: center;
+  @extend %muestreo;
+  height: 22rem;
+}
+.form-novedades {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  @extend %muestreo;
+}
+.form-novedades input {
+  padding: 0.7rem $size;
+  border-radius: 2rem;
+  border: none;
+  width: 300px;
+}
+.form-novedades button {
+  border-radius: 50%;
+  border: none;
+  background: $colorBlanco;
+  color: $colorNegro;
+  font-weight: bold;
+  cursor: pointer;
+  width: 42px;
+  height: 42px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+.input{
+  @extend %decoracionBoton;
+}
+input::placeholder{
+  font-size: .9rem;
+}
+.input-novedades{
+  @extend %decoracionBoton;
+}
+.icono{
+  font-family: "Font Awesome 6 Free" !important;
+}
+
+
+
+/*SUCURSALES*/
+.sucursales-header{
+    @extend %paginasHeader;
+    height: 50vh;
+}
+.sucursales-main{
+    background-color: rgba(0, 0, 0, 0.185)
+}
+
+
+
+/*PRODUCTOS*/
+.productos-header{
+    @extend %paginasHeader;
+    height: 50vh;
+}
+.productos-header-container{
+    max-width: 40rem;
+}   
+
+
