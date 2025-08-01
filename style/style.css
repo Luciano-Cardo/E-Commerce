@@ -293,7 +293,7 @@ input::placeholder {
   border-radius: 20px;
   width: 18rem;
   background-color: rgba(255, 255, 255, 0.658);
-  border: 1px solid black;
+  border: 1px solid rgb(0, 0, 0);
 }
 
 .card-texto {
