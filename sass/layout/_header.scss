@@ -1,21 +1,25 @@
+@use "./utilities/extends";
+@use "./utilities/variables";
+
+
 /* Estilos Header */
 
 
 
 /*Generales*/
 .index-header-flex, .contacto-header-flex{
-  @extend %flexColumn;
+  @include extends.flexColumn;
   justify-content: space-between; /*Da un espacio entre ellos(los links de la navbar)*/
 }
 .navegacion-superior ul li a{
-  color: $colorBlanco;
+  color: variables.$colorBlanco;
   text-decoration: none; /*Le saca el subrayado al a*/
 }
 .index-parrafo-header, .index-h1 , .contacto-parrafo-header, .contacto-h1, .productos-h1, .productos-parrafo-header{
-  color: $colorBlanco;
+  color: variables.$colorBlanco;
 }
 .contenedor-inferior-header{
-  gap: $size;
+  gap: variables.$size;
   max-width: 30rem; /*Limita el width*/
 }
 
@@ -23,43 +27,43 @@
 
 /*INDEX*/
 .index-header{
-    @extend %paginasHeader;
+    @include extends.paginasHeader;
 } 
 .btn-header{
     font-weight: 500;
     max-width: 30rem;
     color: #4d4d4d;
     padding: 15px 40px;
-    background-color: $coloGrisClaro;
+    background-color: variables.$coloGrisClaro;
     font-family: monospace;
     border-radius: 50px;
-    border: 2px solid $coloGrisClaro;
-    box-shadow: inset 4px 4px  10px $colorGris, inset -4px -4px 10px $colorBlanco 
+    border: 2px solid variables.$coloGrisClaro;
+    box-shadow: inset 4px 4px  10px variables.$colorGris, inset -4px -4px 10px variables.$colorBlanco 
 }
 .btn-header:hover{
-    box-shadow: inset 2px 2px 10px $colorGris, inset -2px -2px 10px $colorBlanco, inset 2px 2px 10px $colorGris, inset -2px -2px 10px $colorBlanco; 
+    box-shadow: inset 2px 2px 10px variables.$colorGris, inset -2px -2px 10px variables.$colorBlanco, inset 2px 2px 10px variables.$colorGris, inset -2px -2px 10px variables.$colorBlanco; 
 }
 .btn-header a{
     text-decoration: none;
-    color: $colorNegro;
+    color: variables.$colorNegro;
 }
 
 
 
 /*NOSOTROS*/
 .nosotros-header{
-  background-color: $colorBlanco;
+  background-color: variables.$colorBlanco;
   height: 100vh;
 }
 .nosotros-header{
-  @extend %configuracionFondo;
+  @include extends.configuracionFondo;
   height: 50vh; 
 }
 .sobre-nosotros {
   padding: 4rem 2rem;
 }
 .contenedor-nosotros, .contenedor-nosotros2 {
-  @extend %flexWrap;
+  @include extends.flexWrap;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
@@ -85,54 +89,54 @@
 .texto-nosotros h2, .texto-nosotros2 h2 {
   font-size: 2rem;
   color: #0056a6;
-  margin-bottom: $size;
+  margin-bottom: variables.$size;
 }
 .texto-nosotros p, .texto-nosotros2 p {
-  font-size: $size;
+  font-size: variables.$size;
   line-height: 1.6;
   color: #333;
-  margin-bottom: $size;
+  margin-bottom: variables.$size;
 }
 .linea{
   margin: auto;
   width: 60%;
-  margin-top: $size;
-  margin-bottom: $size;
+  margin-top: variables.$size;
+  margin-bottom: variables.$size;
 }
 
 
 
 /*CONTACTO*/
 .contacto-header{
-  @extend %configuracionFondo;
+  @include extends.configuracionFondo;
 }
 .contact-wrapper {
   background-color: rgba(0, 0, 0, 0.089);
-  @extend %flex;
+  @include extends.flex;
   gap: 2rem;
   padding: 2rem;
 }
 .info-tienda{
-  @extend %configuracionContacto;
+  @include extends.configuracionContacto;
 }
 .formulario-contacto {
-  background-color: $colorBlanco;
-  @extend %configuracionContacto;
+  background-color: variables.$colorBlanco;
+  @include extends.configuracionContacto;
 }
 .info-item {
   display: flex;
   align-items: flex-start;
-  gap: $size;
+  gap: variables.$size;
   margin: 1.5rem 0;
 }
 .info-item i{
   font-size: 1.5rem;
-  color: $colorBlanco;
+  color: variables.$colorBlanco;
   min-width: 24px;
 }
 .formulario-contacto form {
-  @extend %flex;
-  gap: $size;
+  @include extends.flex;
+  gap: variables.$size;
 }
 .formulario-contacto input,
 .formulario-contacto select,
@@ -144,7 +148,7 @@
 .formulario-contacto button {
   align-self: flex-end;
   background-color: #14bde0;
-  color: $colorBlanco;
+  color: variables.$colorBlanco;
   padding: 0.6rem 1.5rem;
   border: none;
   border-radius: 0.25rem;
@@ -153,11 +157,11 @@
 }
 .novedades {
   background-image: url("../img/fondocontacto1.png");
-  @extend %configuracionFondo;
-  color: $colorNegro;
+  @include extends.configuracionFondo;
+  color: variables.$colorNegro;
   padding: 5rem 2rem 55px 2rem; 
   text-align: center;
-  @extend %muestreo;
+  @include extends.muestreo;
   height: 22rem;
 }
 .form-novedades {
@@ -165,10 +169,10 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 0.5rem;
-  @extend %muestreo;
+  @include extends.muestreo;
 }
 .form-novedades input {
-  padding: 0.7rem $size;
+  padding: 0.7rem variables.$size;
   border-radius: 2rem;
   border: none;
   width: 300px;
@@ -176,8 +180,8 @@
 .form-novedades button {
   border-radius: 50%;
   border: none;
-  background: $colorBlanco;
-  color: $colorNegro;
+  background: variables.$colorBlanco;
+  color: variables.$colorNegro;
   font-weight: bold;
   cursor: pointer;
   width: 42px;
@@ -185,13 +189,13 @@
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
 .input{
-  @extend %decoracionBoton;
+  @include extends.decoracionBoton;
 }
 input::placeholder{
   font-size: .9rem;
 }
 .input-novedades{
-  @extend %decoracionBoton;
+  @include extends.decoracionBoton;
 }
 .icono{
   font-family: "Font Awesome 6 Free" !important;
@@ -201,7 +205,7 @@ input::placeholder{
 
 /*SUCURSALES*/
 .sucursales-header{
-    @extend %paginasHeader;
+    @include extends.paginasHeader;
     height: 50vh;
 }
 .sucursales-main{
@@ -212,7 +216,7 @@ input::placeholder{
 
 /*PRODUCTOS*/
 .productos-header{
-    @extend %paginasHeader;
+    @include extends.paginasHeader;
     height: 50vh;
 }
 .productos-header-container{

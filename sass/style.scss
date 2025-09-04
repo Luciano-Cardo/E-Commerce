@@ -1,9 +1,10 @@
-@import "./utilities/extends";
-@import "./utilities/variables";
-@import "./layout/header";
-@import "./layout/main";
-@import "./layout/footer";
-@import "./mq/mq";
+@use "./utilities/extends";
+@use "./utilities/variables";
+@use "./layout/header";
+@use "./layout/main";
+@use "./layout/footer";
+@use "./mq/mq";
+
 
 /* Estilos Generales */
 *{
@@ -19,7 +20,7 @@
 }
 
 ul{
-    @extend %flexColumn;
+    @include extends.flexColumn;
     list-style: none; /*Le saca las pelotitas a la lista*/
     gap: 1rem;
 }

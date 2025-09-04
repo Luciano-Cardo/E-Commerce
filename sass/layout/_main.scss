@@ -16,7 +16,7 @@
     border-radius: 20px;
     width: 18rem;
     background-color: rgba(255, 255, 255, 0.658);
-    border: 1px solid $colorNegro;
+    border: 1px solid variables.$colorNegro;
 }
 .card-texto{
     padding: 2rem 1rem 0px 1rem;
@@ -30,13 +30,13 @@
 /*PRODUCTOS*/
 .ultimos-modelos-titulo{
     text-align: center;
-    margin: $size 0;
+    margin: variables.$size 0;
 }
 .card-auto{
     width: 25rem; 
     background-color: rgba(0, 0, 0, 0.082);
     transition: transform 0.5s;
-    @extend %btnCard;
+    @include extends.btnCard;
 }
 .card-auto:hover{
     transform: scale(1.02);
@@ -45,7 +45,7 @@
     border: 0.5rem;
 }
 .card-auto h3, .card-auto p{
-    margin-left: $size;
+    margin-left: variables.$size;
 }
 .card-auto-btm{
     border: none;
@@ -53,11 +53,11 @@
     font-weight: 800;
     margin-top: 0.5rem;
     text-transform: uppercase; 
-    @extend %btnCard;
+    @include extends.btnCard;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.26)
 }
 .ultimos-modelos-container{
-    @extend %flexWrap;
-    gap: $size;
+    @include extends.flexWrap;
+    gap: variables.$size;
 }
